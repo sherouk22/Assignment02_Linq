@@ -42,7 +42,6 @@ namespace Assignment02_Linq
             #endregion
 
 
-
             #region LINQ - Aggregate Operators
 
             #region 1- Uses Count to get the number of odd numbers in the array
@@ -122,7 +121,34 @@ namespace Assignment02_Linq
             //Console.WriteLine(averageLength); 
             #endregion
 
+            #region 9- Get the total units in stock for each product category.
 
+            //var totalUnitsInStockByCategory = ProductList.GroupBy(product => product.Category).
+            //     Select(catproduct => new
+            //     {
+            //         Category = catproduct.Key,
+            //         TotalUnitsInStock = catproduct.Sum(product => product.UnitsInStock)
+            //     });
+            //foreach (var product in totalUnitsInStockByCategory)
+            //    Console.WriteLine(product);
+
+            #endregion
+
+            #region 10- Get the cheapest price among each category's products
+
+
+            //var cheapestPriceByCategory = ProductList.GroupBy(product => product.Category)
+            //    .Select(catproduct => new
+            //    {
+
+            //        Category = catproduct.Key,
+            //        CheapestPrice = catproduct.Min(product => product.UnitPrice)
+            //    });
+
+            //foreach (var catproduct in cheapestPriceByCategory)
+            //    Console.WriteLine(catproduct);
+
+            #endregion
 
             #endregion
         }
