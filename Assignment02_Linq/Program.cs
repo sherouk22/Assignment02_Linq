@@ -169,6 +169,52 @@ namespace Assignment02_Linq
 
             #endregion
 
+            #region 12- Get the most expensive price among each category's products.
+
+            //var mostExpensivePriceByCategory = ProductList.GroupBy(product => product.Category)
+            //        .Select(catproduct => new
+            //        {
+
+            //            Category = catproduct.Key,
+            //            MaxPrice = catproduct.Max(product => product.UnitPrice)
+            //        });
+
+            //foreach (var catproduct in mostExpensivePriceByCategory)
+            //    Console.WriteLine(catproduct);
+
+            #endregion
+
+            #region 13- Get the products with the most expensive price in each category.
+
+            //var mostExpensivePriceByCategory = ProductList.GroupBy(product => product.Category)
+            //        .Select(catproduct => new
+            //        {
+
+            //            Category = catproduct.Key,
+            //            MaxPrice = catproduct.Max(product => product.UnitPrice)
+            //        });
+
+            //foreach (var catproduct in mostExpensivePriceByCategory)
+            //    Console.WriteLine(catproduct);
+
+            #endregion
+
+            #region 14- Get the average price of each category's products.
+
+            //var averagePriceByCategory = ProductList.GroupBy(product => product.Category)
+            //       .Select(catproduct => new
+            //       {
+
+            //           Category = catproduct.Key,
+            //           AveragePrice = catproduct.Average(product => product.UnitPrice)
+            //       });
+
+            //foreach (var catproduct in averagePriceByCategory)
+            //    Console.WriteLine(catproduct);
+
+            #endregion
+
+
             #endregion
         }
     }
