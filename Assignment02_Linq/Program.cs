@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using static Assignment02_Linq.ListGenerator;
 namespace Assignment02_Linq
 {
@@ -40,7 +41,6 @@ namespace Assignment02_Linq
             #endregion
 
             #endregion
-
 
             #region LINQ - Aggregate Operators
 
@@ -276,6 +276,43 @@ namespace Assignment02_Linq
 
             #endregion
 
+            #region LINQ - Quantifiers
+
+
+            #region 1- Determine if any of the words in dictionary_english.txt (Read dictionary_english.txt into Array of String First) contain the substring 'ei'.
+
+            //string[] words = File.ReadAllLines("dictionary_english.txt");
+
+            //var result = words.Any(word => word.Contains("ei"));
+            //Console.WriteLine(result);
+
+            #endregion
+
+            #region 2- Return a grouped a list of products only for categories that have at least one product that is out of stock.
+
+            //var categoriesWithOutOfStockProducts = ProductList
+            //                             .GroupBy(product => product.Category)
+            //                             .Where(products => products.Any(product => product.UnitsInStock == 0)).
+            //                             Select(product => new { Category = product.Key, Products = product.ToList() });
+
+            //foreach (var category in categoriesWithOutOfStockProducts)
+            //    Console.WriteLine(category);
+
+            #endregion
+
+            #region 3- Return a grouped a list of products only for categories that have all of their products in stock.
+
+
+            //var Product = ProductList.GroupBy(product => product.Category)
+            //     .Where(group => group.All(product => product.UnitsInStock > 0))
+            // .Select(group => new { Category = group.Key, Products = group.ToList() });
+
+            // foreach (var product in Product) 
+            //     Console.WriteLine(product);
         }
+        #endregion
+
+        #endregion
     }
+
 }
